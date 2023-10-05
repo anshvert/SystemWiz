@@ -4,9 +4,9 @@ interface SidebarProps {}
 const Sidebar: React.FC<SidebarProps> = () => {
     return (
         <>
-            <aside className="w-64 bg-gray-800 text-white h-auto m-5">
+            <aside className="w-64 bg-gray-900 text-white h-auto">
                 <div className="p-4">
-                    <h1 className="text-2xl font-semibold">Sidebar</h1>
+                    <h1 className="text-2xl font-semibold">Home</h1>
                 </div>
                 <nav className="py-4">
                     <ul>
