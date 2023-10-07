@@ -1,16 +1,14 @@
 import Navbar from '@/components/Navbar/Navbar'
 import Sidebar from '@/components/Sidebar/Sidebar'
 import Content from '@/components/Content/Content'
+import { options } from "@/app/api/auth/[...nextauth]/options"
+import { getServerSession } from "next-auth/next"
+import { useEffect, useState } from 'react'
+import ClientPage from './client/page'
 
-export default function Home() {
+export default async function Home() {
   return (
-    <>
-      <Navbar />
-      <div className='flex ml-5 mt-20 mb-10 p-1'>
-        <Sidebar />
-        <Content/>
-      </div>
-    </>
-
+    <ClientPage/>
   )
+    
 }

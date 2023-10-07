@@ -1,3 +1,4 @@
+import React from "react"
 
 interface SidebarProps {}
 
@@ -11,7 +12,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
                 <nav className="py-4">
                     <ul>
                         <li className="mb-2">
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-700">Dashboard</a>
+                            <a href="/dashboard" className="block px-4 py-2 hover:bg-gray-700">Dashboard</a>
                         </li>
                         <li className="mb-2">
                             <a href="#" className="block px-4 py-2 hover:bg-gray-700">Profile</a>
